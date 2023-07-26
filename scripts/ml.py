@@ -6,7 +6,7 @@ from sklearn.preprocessing import PolynomialFeatures
 pd.display_max_columns = None
 pd.display_max_rows = None
 
-df = pd.read_csv('data/csv_wranged.csv')
+df = pd.read_csv('archive/csv_wranged.csv')
 df = df[['year', df.columns[-2], df.columns[-1]]][1:]
 
 # Convert the 'year' column to strings
@@ -50,6 +50,5 @@ future_data['inflation_growth'] = future_inflation_predictions
 future_data['salary_depend'] = future_salary_predictions
 
 result_df = pd.concat([df, future_data], ignore_index=True)
-print(result_df)
 
 result_df.to_csv('data/inflation_final.csv')

@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 
 
-file = ('data/predicted_data.csv')
-df = pd.read_csv(file, sep=';')
+file = ('data/predict.csv')
+df = pd.read_csv(file)
 df['year_exp'] = df['year']
 
 print(df)
