@@ -49,6 +49,7 @@ plt.rcParams['axes.labelcolor'] = 'white'
 plt.rcParams['xtick.color'] = 'grey'
 plt.rcParams['ytick.color'] = 'grey'
 animation = FuncAnimation(fig,animate, frames=range(0, len(df)+1), interval = 5)
+# animation.save('inflation_gif.gif', dpi=100, writer=PillowWriter(fps=150)) # Script for saving
 # plt.legend()
 plt.show()
 
