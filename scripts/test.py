@@ -1,47 +1,37 @@
-import pandas as pd
+li =  [151513, 15612, 153215, 5556123, 7123500]
+lin = []
 
-file = 'data/csv_infl.csv'
-df = pd.read_csv(file)
+# for i in li:
+#     x = str(i)
+#     print(type(x))
+#     ch = ''
+#     for k in range(0, len(x)):
+#         if len(x)>6:
 
-print(df)
+#         ch = ch +x[k]
+#     lin.append(ch)
+# print(lin)
+# for i in li:
+#     x = str(i)
+#     k = ''
+#     g = ''
+#     if len(x) > 6:
+#         k = x[0] + ' ' + x[1:]
+#         print(k)
+#         k = k[:-3] + ' ' +  k[-3:]
+#         lin.append(k)
+#     else:
+#         g = x[:-3] + ' ' +  x[-3:]
+#         lin.append(g)
+# print(lin)
 
-inflation_list = df['inflation'].values.tolist()
-print(inflation_list)
+def formate_salary(salary):
+    salary_str = str(salary)
+    if len(salary_str)> 6:
+        res = salary_str[0] + ' ' +salary_str[1:]
+        res = res[:-3] + ' ' + res[-3:]
+    else: 
+        res = salary_str[:-3] + ' ' + salary_str[-3:]
+    return res
 
-price = [100]
-
-x = 100 
-k = 0
-for i in range(1, len(inflation_list)):
-    k = (inflation_list[i]+100)/100*(x)
-    price.append(k)
-    x = k 
-
-print(price)
-
-j_list = []
-for i in price:
-    if i == 100:
-        j_list.append(0)
-    else:
-        j_list.append(((i/price[0])-1)*100)
-print(j_list)
-
-df['inflation_growth'] = j_list
-print(df)
-
-salary = df['salary_avg'].values.tolist()
-
-sal_incr = []
-for i in salary:
-    if i == 50910:
-        sal_incr.append(0)
-    else:
-        sal_incr.append(((i/salary[0])-1)*100)
-
-print(sal_incr)
-
-df['salary_depend'] = sal_incr
-print(df)
-
-df.to_csv('data/csv_wranged')
+print(formate_salary(25000))
