@@ -40,8 +40,22 @@ We downoladed data from that source and located it in acrhive as source.xsls
 
 We have processed the source data to make it normalized and derived  several aggregated datasets from it:
 
-* `archive/source.xsls` - sourse data 
-* `acrhive/kazpop.csv` - unpivoted sourse data 
-* `data/csv_final.csv` - expanded main dataset which predicts populations from 2023 to 2050
-* `data/rsl1.csv` - final dataset expanded to 10 steps to make vizualization smoother
+* `archive/csv_wranged.csv` - sourse data 
+* `data/prediction.csv` - wranged and preprocessed data
+* `data/csv_expanded.csv` - expanded main dataset which predicts populations from 2023 to 2050
 * `datapackge.json` - conatins all of the key information about our dataset
+
+## Scripts
+
+* `wrang.py`- cleaning and wranging the source data script
+* `expand.py` - uses main dataset and expands it to 8 steps to make animation soft
+* `animate.py` - uses matplotlib to create an infographic about populations over the inflation and exports it to a gif file
+* `datapack.py` - creating datapckage.json file that conatinsall meatadata
+* `main.py` - launches all scripts step by step
+
+## Visualization
+
+Final result is visualized data that displays average salary and inflation data
+
+
+<img src="inflation_gif.gif" alt="inflation" width="450" height="800">
