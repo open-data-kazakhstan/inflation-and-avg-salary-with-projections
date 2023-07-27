@@ -1,0 +1,170 @@
+{
+    "profile": "tabular-data-package",
+    "resources": [
+        {
+            "path": "archive\\csv_wranged.csv",
+            "profile": "tabular-data-resource",
+            "name": "csv_wranged",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "field1",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "Unnamed: 0",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "year",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "inflation",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "salary_increase",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "salary_avg",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "inflation_growth",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "salary_depend",
+                        "type": "number",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        },
+        {
+            "path": "data\\csv_expanded2.csv",
+            "profile": "tabular-data-resource",
+            "name": "csv_expanded2",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "field1",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "year",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "inflation",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "salary_avg",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "inflation_growth",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "salary_depend",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "year_exp",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "salary_growth",
+                        "type": "number",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        },
+        {
+            "path": "data\\prediction.csv",
+            "profile": "tabular-data-resource",
+            "name": "prediction",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "field1",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "year",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "inflation",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "salary_increase",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "salary_avg",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "inflation_growth",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "salary_depend",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "salary_growth",
+                        "type": "number",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        }
+    ]
+}
