@@ -63,3 +63,9 @@ Final result is visualized data that displays average salary and inflation data
 
 
 <img src="inflation_gif.gif" alt="inflation" width="450" height="800">
+
+## License
+
+This dataset is licensed under the Open Data Commons [Public Domain and Dedication License][pddl].
+
+[pddl]: https://www.opendatacommons.org/licenses/pddl/1-0/
